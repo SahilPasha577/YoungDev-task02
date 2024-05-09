@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="one">
+        <h1 class="head">Registration Form</h1>
+        <br>
+        <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+
+             <!-- Name -->
+            <div class="formDesign" id="name">
+            <label for="name" class="label-form">Full Name</label>
+            <br>
+            <b class="bold">
+                <div class="formError">
+                    
+                            </div> 
+                        </b>
+            <input class="in-form" class=in type="text" name="fname" placeholder="Enter full name" required>
+        </div>
+            <br>
+            
+
+             <!-- Email -->
+            <div class="formDesign" id="email">
+            <label for="email" class="label-form">Email Address</label>
+            <br>
+            <b class="bold">
+                <div class="formError">
+                    
+                            </div> 
+                        </b>
+            
+            <input class="in-form" class=in type="email" name="femail" placeholder="Enter email address" required>
+            </div>
+            <br>
+
+            
+            <div class="both">
+
+                 <!-- Phone -->
+                <div class="formDesign" id="phone">
+                <div class="first">
+            <label for="phone" class="label-phone">Phone Number</label>
+            <br>
+            <b class="bold">
+                <div class="formError">
+                    
+                            </div> 
+                        </b>
+            
+            
+            <input class="in-phone" class=in type="number" name="fphone" placeholder="Enter phone number" required>
+        </div>
+        </div>
+
+
+             <!-- Birth Date -->
+        <div class="formDesign" id="date1">
+<div class="second">
+            <label for="birth" class="label-birth">Birth Date</label>
+            <br>
+            <b class="bold">
+                <div class="formError">
+                    
+                            </div> 
+                        </b>
+            
+            <input class="in-birth" class=in type="date" name="fdate">
+            <br><br>
+        </div>
+        </div>
+
+
+        </div>
+            
+
+         <!-- Gender - radio -->
+         <div class="formDesign" id="gender">
+        <div class="rad">
+            <label for="Gender" class="label-gender">Select Gender</label>
+            <br>
+            <b class="bold">
+                <div class="formError">
+                    
+                            </div> 
+                        </b>
+            
+            <div class="bet">
+            <div class="bet2">
+            <input class="in-gender" class=in type="radio" value="male" name="fgender">
+            <label class="label-male" for="male">Male</label>
+            </div>
+
+            <div class="bet3">
+            <input class="in-gender" class=in type="radio" value="female" name="fgender">
+            <label class="label-female" for="female">Female</label>
+        </div>
+        </div>
+        </div>
+    </div>
+            <br>
+
+   
+             <!-- Address-->
+             <div class="formDesign" id="address1">
+            <label for="address" class="label-adress">Address</label>
+            <br>
+            <b class="bold">
+                <div class="formError">
+                    
+                            </div> 
+                        </b>
+            
+            <input class="in-address" class=in type="text" name="faddress" placeholder="Enter your address" required>
+            </div>
+            <br>
+
+            <div class="both2">
+
+                 <!-- Country - Select -->
+                 <div class="formDesign" id="selection">
+                <div class="first2">
+                    <b class="bold">
+                        <div class="formError">
+                            
+                                    </div> 
+                                </b>
+            <select name="fselect" id="country" class="label-drop">
+                <option hidden value="">Select Country</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="England">England</option>
+                <option value="Australia">Australia</option>
+                <option value="Qatar">Qatar</option>
+            </select>
+            
+        </div>
+    </div>
+        <br>
+
+        <!-- City -->
+        <div class="formDesign" id="city">
+            <b class="bold">
+                <div class="formError">
+                    
+                            </div> 
+                        </b>
+        <div class="second2">
+            <input class="in-city" class=in type="text" name="fcity" placeholder="Enter your city" required >
+        </div>
+    </div>
+
+
+        </div>
+            <br>
+
+            <!-- Postal Code -->
+            <div class="formDesign" id="postal">
+                <b class="bold">
+                    <div class="formError">
+                        
+                                </div> 
+                            </b>
+            <input class="in-address" class=in type="number" name="fpostal" placeholder="Enter postal code" required>
+        </div>
+            <br>
+
+
+             <!-- Button -->
+            <div class="button">
+            <input class="btn" type="submit" value="Submit">
+        </div>
+
+    </form>
+    </div>
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
